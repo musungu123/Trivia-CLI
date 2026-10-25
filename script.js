@@ -111,7 +111,7 @@ function nextQuestion() {
 // Show the final results
 function endGame() {
   if (gameOver) {
-    return; // make sure this only runs once
+    return; 
   }
   gameOver = true;
 
@@ -126,8 +126,6 @@ function endGame() {
 
   rl.close(); // lets the program finish
 }
-
-// ----- Run the game -----
 
 // This runs every time the user types something and presses Enter
 rl.on("line", function (input) {
